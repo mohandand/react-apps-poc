@@ -1,0 +1,40 @@
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.red{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.active{
+    box-shadow: 0px 0px 10px 10px aqua;
+}
