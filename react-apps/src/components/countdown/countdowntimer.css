@@ -1,0 +1,26 @@
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+}
+.block{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px 2px  rgba(0,0,0,0.5);
+}
+.time-block{
+    display: flex;
+    flex-direction: row;
+}

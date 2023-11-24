@@ -1,0 +1,27 @@
+.pagination-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+}
+.post{
+    padding: 5px;
+    width: 60%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.posts-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width:60%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+.accordionone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.accordionone-button{
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 5px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.accrdionone-content{
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    overflow: hidden;
+}
