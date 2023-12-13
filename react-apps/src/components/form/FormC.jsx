@@ -7,6 +7,7 @@ export default function FormC(){
         confirmPassword:'',
         gender:'',
         checkbox:''
+        //as
     })
 
     function handleChange(e){
