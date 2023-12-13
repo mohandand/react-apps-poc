@@ -11,7 +11,6 @@ import Pagination from './components/pagination/Pagination';
 import Accordion from './components/accordion/Accordion';
 import Modal from './components/modal/Modal'
 import CountDownTimer from './components/countdown/CountDownTimer';
-import FormC from './components/form/FormC';
 
 const App = () => {
   return (
@@ -50,9 +49,6 @@ const App = () => {
             <button>
               <Link className="link-button" to="/countdowntimer">CountDownTimer</Link>
             </button>
-            <button>
-              <Link className="link-button" to="/formc">FORM</Link>
-            </button>
         <hr />  
         <Routes>
         <Route path="/formvalidation" element={<FormValidation />} />
@@ -66,7 +62,6 @@ const App = () => {
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/modal" element={<Modal />} />
           <Route path="/countdowntimer" element={<CountDownTimer />} />
-          <Route path="/formc" element={<FormC />} />
         </Routes>
       </div>
     </Router>
