@@ -11,7 +11,7 @@ import Pagination from './components/pagination/Pagination';
 import Accordion from './components/accordion/Accordion';
 import Modal from './components/modal/Modal'
 import CountDownTimer from './components/countdown/CountDownTimer';
-
+import AccorItem from './components/accor/AccorItem';
 const App = () => {
   return (
     <Router>
@@ -49,6 +49,9 @@ const App = () => {
             <button>
               <Link className="link-button" to="/countdowntimer">CountDownTimer</Link>
             </button>
+            <button>
+              <Link className="link-button" to="/accor">Accor</Link>
+            </button>
         <hr />  
         <Routes>
         <Route path="/formvalidation" element={<FormValidation />} />
@@ -62,6 +65,7 @@ const App = () => {
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/modal" element={<Modal />} />
           <Route path="/countdowntimer" element={<CountDownTimer />} />
+          <Route path="/accor" element={<AccorItem />} />
         </Routes>
       </div>
     </Router>
