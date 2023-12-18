@@ -1,12 +1,13 @@
-import React, {useState} from 'react';
-import MyContext from './MyContext'
+// MyContextProvider.js
+import React, { useState } from 'react';
+import MyContext from './MyContext';
 
-export default function MycontextProvider({children}){
-    const [value, setValue] = useState('Default Value');
+export default function MyContextProvider({ children }) {
+  const [value, setValue] = useState('Intial value received from Mycontext Provider');
 
-    return(
-        <MyContext.Provider value={{value, setValue}}>
-            {children}
-        </MyContext.Provider>
-    )
+  return (
+    <MyContext.Provider value={{ value, setValue }}>
+      {children}
+    </MyContext.Provider>
+  );
 }

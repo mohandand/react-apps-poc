@@ -1,11 +1,12 @@
+// ParentComponent.js
 import React from 'react';
-import ChildComponent from './ChildComponent'
-import MycontextProvider from './MyContextProvider';
+import ChildComponent from './ChildComponent';
+import MyContextProvider from './MyContextProvider';
 
-export default function ParentComponent(){
-    return(
-        <MycontextProvider>
-        <ChildComponent/>
-    </MycontextProvider>
-    )
+export default function ParentComponent() {
+  return (
+    <MyContextProvider>
+      <ChildComponent />
+    </MyContextProvider>
+  );
 }
