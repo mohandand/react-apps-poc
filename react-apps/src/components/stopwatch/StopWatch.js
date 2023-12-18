@@ -26,7 +26,7 @@ export default function StopWatch(){
    const seconds = Math.floor((time % (60*100)) / 100);
  
    // Milliseconds calculation
-   const milliseconds = time % 100;
+//    const milliseconds = time % 100;
  
     
     return(

@@ -11,8 +11,8 @@ import Pagination from './components/pagination/Pagination';
 import Accordion from './components/accordion/Accordion';
 import Modal from './components/modal/Modal'
 import CountDownTimer from './components/countdown/CountDownTimer';
-import AccorItem from './components/accor/AccorItem';
 import StopWatch from './components/stopwatch/StopWatch';
+import AutoSuggsetion from './components/autosuggestion/AutoSuggestion';
 const App = () => {
   return (
     <Router>
@@ -51,10 +51,10 @@ const App = () => {
               <Link className="link-button" to="/countdowntimer">CountDownTimer</Link>
             </button>
             <button>
-              <Link className="link-button" to="/accor">Accor</Link>
+              <Link className="link-button" to="/stopwatch">StopWatch</Link>
             </button>
             <button>
-              <Link className="link-button" to="/stopwatch">StopWatch</Link>
+              <Link className="link-button" to="/autosuggestion">AutoSuggestion</Link>
             </button>
         <hr />  
         <Routes>
@@ -69,8 +69,8 @@ const App = () => {
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/modal" element={<Modal />} />
           <Route path="/countdowntimer" element={<CountDownTimer />} />
-          <Route path="/accor" element={<AccorItem />} />
           <Route path="/stopwatch" element={<StopWatch />} />
+          <Route path="/autosuggestion" element={<AutoSuggsetion />} />
         </Routes>
       </div>
     </Router>

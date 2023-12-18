@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 auto;
+    width:60%;
+    height: 60%;
+}
+.auto-input{
+    border-radius: 8px;;
+    padding: 10px;
+    width:30%
+}
+
+.display-list{
+    border: 1px solid black;
+    border-radius: 8px;
+    width:30%;
+    padding: 10px;
+    margin: 5px;
+    overflow-y: scroll;
+}
+.list{
+    list-style: none;
+}
+
+.li-item{
+    border: 1px solid black;
+    border-radius: 8px;
+    width:90%;
+    height: 10%;
+    padding: 3px;
+    margin-bottom: 4px;
+}
+
+.activee {
+    background-color: #f2f2f2;
+  }
