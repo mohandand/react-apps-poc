@@ -13,6 +13,7 @@ import Modal from './components/modal/Modal'
 import CountDownTimer from './components/countdown/CountDownTimer';
 import StopWatch from './components/stopwatch/StopWatch';
 import AutoSuggsetion from './components/autosuggestion/AutoSuggestion';
+import ParentComponent from './components/usecontext/ParentComponent';
 const App = () => {
   return (
     <Router>
@@ -56,6 +57,9 @@ const App = () => {
             <button>
               <Link className="link-button" to="/autosuggestion">AutoSuggestion</Link>
             </button>
+            <button>
+              <Link className="link-button" to="/usecontext">UseContext</Link>
+            </button>
         <hr />  
         <Routes>
         <Route path="/formvalidation" element={<FormValidation />} />
@@ -71,6 +75,7 @@ const App = () => {
           <Route path="/countdowntimer" element={<CountDownTimer />} />
           <Route path="/stopwatch" element={<StopWatch />} />
           <Route path="/autosuggestion" element={<AutoSuggsetion />} />
+          <Route path="/usecontext" element={<ParentComponent />} />
         </Routes>
       </div>
     </Router>
