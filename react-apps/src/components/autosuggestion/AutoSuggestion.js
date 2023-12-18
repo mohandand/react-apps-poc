@@ -60,7 +60,7 @@ export default function AutoSuggestion() {
   // Close the suggestion list when clicking outside the component
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!e.target.closest('.container')) {
+      if (!e.target.closest('.display-list')) {
         setShowList(false);
       }
     };
