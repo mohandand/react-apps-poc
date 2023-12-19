@@ -15,8 +15,8 @@ export default function ChildComponent() {
       <div>{value}</div>
       <br/>
       <div>
-        <input type="text" onChange={handleChange} style={{ width: '30%' }} />
-        <button onClick={() => setValue(inputVal)}>Change Text</button>
+        <input type="text" onChange={handleChange} style={{ width: '80%' }} />
+        <button onClick={() => setValue(inputVal)}>Change Intial Text</button>
       </div>
     </div>
   );
