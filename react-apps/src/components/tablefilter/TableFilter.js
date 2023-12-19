@@ -22,7 +22,7 @@ export default function TableFilter(){
       function handleFilter(e){
         e.preventDefault();
         let filteredResult = intialData.filter((item) => {
-            return item[selectedColumn].toString().includes(searchValue.toString());
+            return String(item[selectedColumn]).toLowerCase().includes(String(searchValue).toLowerCase());
         })
         setTableData(filteredResult);
       }
@@ -32,11 +32,11 @@ export default function TableFilter(){
             <h2>Table Filter</h2>
             <div >
             <form className="filter-area" onSubmit={handleFilter}>
-                <select onSelect={handleSelectValue}>
-                    <option>Id</option>
-                    <option>Name</option>
-                    <option>Age</option>
-                    <option>Volume</option>
+                <select onChange={handleSelectValue}>
+                    <option>id</option>
+                    <option>name</option>
+                    <option>age</option>
+                    <option>volume</option>
                 </select>
                 <input type='text' placeholder='Enter value' onChange={handleInputChnage}/>
                 <button type="submit">Search</button>
