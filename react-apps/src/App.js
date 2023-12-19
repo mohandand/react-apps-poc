@@ -16,6 +16,7 @@ import AutoSuggsetion from './components/autosuggestion/AutoSuggestion';
 import ParentComponent from './components/usecontext/ParentComponent';
 import TableFilter from './components/tablefilter/TableFilter';
 import DragAndDrop from './components/draganddrop/DragAndDrop';
+import EditableTable from './components/editable-table/EditableTable';
 const App = () => {
   return (
     <Router>
@@ -68,6 +69,9 @@ const App = () => {
             <button>
               <Link className="link-button" to="/draganddrop">DragAndDrop</Link>
             </button>
+            <button>
+              <Link className="link-button" to="/editabletable">EditableTable</Link>
+            </button>
         <hr />  
         <Routes>
         <Route path="/formvalidation" element={<FormValidation />} />
@@ -86,6 +90,7 @@ const App = () => {
           <Route path="/usecontext" element={<ParentComponent />} />
           <Route path="/tablefilter" element={<TableFilter />} />
           <Route path="/draganddrop" element={<DragAndDrop />} />
+          <Route path="/editabletable" element={<EditableTable />} />
         </Routes>
       </div>
     </Router>

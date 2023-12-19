@@ -50,5 +50,5 @@ Step-1: Remove 3 from the list = [1,2,4,5]
 -> to do this = array.splice(index of Dragging item, how many items need to remove) = array.splice(2,1)
 Step-2: Now place 3 on to item 1 as we dragged over there
  ->to do this =array.splice(whichweneedtooveride,howmany need to delete,whattooverdie) = array.splice(0,0,3)
- source: https://medium.com/front-end-weekly/drag-and-drop-in-reactjs-134a8ac3c051
+ source:
  */
