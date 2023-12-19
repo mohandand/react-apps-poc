@@ -15,6 +15,7 @@ import StopWatch from './components/stopwatch/StopWatch';
 import AutoSuggsetion from './components/autosuggestion/AutoSuggestion';
 import ParentComponent from './components/usecontext/ParentComponent';
 import TableFilter from './components/tablefilter/TableFilter';
+import DragAndDrop from './components/draganddrop/DragAndDrop';
 const App = () => {
   return (
     <Router>
@@ -64,6 +65,9 @@ const App = () => {
             <button>
               <Link className="link-button" to="/tablefilter">TableFilter</Link>
             </button>
+            <button>
+              <Link className="link-button" to="/draganddrop">DragAndDrop</Link>
+            </button>
         <hr />  
         <Routes>
         <Route path="/formvalidation" element={<FormValidation />} />
@@ -81,6 +85,7 @@ const App = () => {
           <Route path="/autosuggestion" element={<AutoSuggsetion />} />
           <Route path="/usecontext" element={<ParentComponent />} />
           <Route path="/tablefilter" element={<TableFilter />} />
+          <Route path="/draganddrop" element={<DragAndDrop />} />
         </Routes>
       </div>
     </Router>

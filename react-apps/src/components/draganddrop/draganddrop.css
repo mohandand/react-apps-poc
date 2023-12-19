@@ -1,0 +1,8 @@
+.item-container{
+    width: 40%;
+    padding:10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
