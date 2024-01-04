@@ -17,6 +17,9 @@ import ParentComponent from './components/usecontext/ParentComponent';
 import TableFilter from './components/tablefilter/TableFilter';
 import DragAndDrop from './components/draganddrop/DragAndDrop';
 import EditableTable from './components/editable-table/EditableTable';
+import NavBar from './components/navbar/NavBar';
+import PromiseDemo from './components/promise-demo/PromiseDemo';
+import DataComponentWithFetch from './components/higher-order-component/DataComponentWithFetch';
 const App = () => {
   return (
     <Router>
@@ -38,6 +41,12 @@ const App = () => {
             </button>
             <button>
               <Link className="link-button" to="/tableoperations">TableSort</Link>
+            </button>
+            <button>
+              <Link className="link-button" to="/tablefilter">TableFilter</Link>
+            </button>
+            <button>
+              <Link className="link-button" to="/editabletable">EditableTable</Link>
             </button>
             <button>
               <Link className="link-button" to="/infinitescroll">InfiniteScroll</Link>
@@ -64,13 +73,16 @@ const App = () => {
               <Link className="link-button" to="/usecontext">UseContext</Link>
             </button>
             <button>
-              <Link className="link-button" to="/tablefilter">TableFilter</Link>
-            </button>
-            <button>
               <Link className="link-button" to="/draganddrop">DragAndDrop</Link>
             </button>
             <button>
-              <Link className="link-button" to="/editabletable">EditableTable</Link>
+              <Link className="link-button" to="/navbar">NavBar</Link>
+            </button>
+            <button>
+              <Link className="link-button" to="/promisedemo">PromiseDemo</Link>
+            </button>
+            <button>
+              <Link className="link-button" to="/hoc">HOC Demo</Link>
             </button>
         <hr />  
         <Routes>
@@ -91,6 +103,9 @@ const App = () => {
           <Route path="/tablefilter" element={<TableFilter />} />
           <Route path="/draganddrop" element={<DragAndDrop />} />
           <Route path="/editabletable" element={<EditableTable />} />
+          <Route path="/navbar" element={<NavBar />} />
+          <Route path="/promisedemo" element={<PromiseDemo />} />
+          <Route path="/hoc" element={<DataComponentWithFetch />} />
         </Routes>
       </div>
     </Router>

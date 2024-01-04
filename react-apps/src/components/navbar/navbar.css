@@ -1,0 +1,29 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+.menucontent{
+    text-align: center;
+}
+
+.navitems{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.menubutton{
+    width: 80px;
+}
